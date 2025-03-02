@@ -6,18 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
-    <!-- DaisyUI CDN -->
+
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 
 
-    <!-- Tailwind CDN -->
+
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
 </head>
 
 <body class="bg-[#F4F7FF]">
-    <!-- Header Start -->
+ 
     <header class="container mx-auto">
         <div class="navbar bg-base-100 shadow-sm rounded-xl">
             <div class="cursor-pointer flex items-center flex-1">
@@ -32,56 +32,51 @@
             </div>
         </div>
     </header>
-    <!-- Header End -->
 
-    <!-- Main Content Start -->
+
     <main class="container mx-auto mt-2">
         <h1 class="text-center font-bold text-xl my-2">Blogs</h1>
         <div class="bg-white my-2 p-3 rounded-lg shadow-sm">
             <h1 class="font-bold text-lg border-b border-dotted border-gray-500 mb-2">What are the different ways to
                 select an element in the DOM?</h1>
-            <h1>We can select an element in the DOM by several ways. For Example:</h1>
             <ul class="list-disc ml-8">
-                <li>Using getElementById</li>
-                <li>Using getElementsByClassName</li>
-                <li>Using getElementsByTagName</li>
-                <li>Using querySelector</li>
-                <li>Using querySelectorAll</li>
+                <li>GetElementById</li>
+                <li>GetElementsByClassName</li>
+                <li>GetElementsByTagName</li>
+                <li>GuerySelector</li>
+                <li>GuerySelectorAll</li>
             </ul>
         </div>
         <div class="bg-white my-2 p-3 rounded-lg shadow-sm">
             <h1 class="font-bold text-lg border-b border-dotted border-gray-500 mb-2">What is the difference between
                 innerHTML, innerText, and textContent?</h1>
             <ul class="list-disc ml-8">
-                <li><b>InnerHTML:</b> Using innerHTML allows you to see exactly what’s in the HTML markup contained within a string, including elements like spacing, line breaks and formatting.</li>
-                <li><b>InnerText:</b> This approximates the “rendered” text content of a node and is aware of styling and CSS. It’s most effective when you only need to see what’s in the element without the formatting.</li>
-                <li><b>TextContent:</b> This retrieves and sets the content of the tag as plain text. It’s most effective when you want to see what’s in an element, plus styling.</li>
+                <li><b>InnerHTML:</b> innerHTML lets you see the HTML code inside a string, including things like spaces, line breaks, and</li>
+                <li><b>InnerText:</b> This shows the "rendered" text of a node and understands styling and CSS. It’s helpful when you just want to see the content of the element without worrying about the formatting.</li>
+                <li><b>TextContent:</b> It gets or sets the tag’s content as plain text, and it’s useful when you want to see the text along with the styling.</li>
             </ul>
         </div>
         <div class="bg-white my-2 p-3 rounded-lg shadow-sm">
             <h1 class="font-bold text-lg border-b border-dotted border-gray-500 mb-2">What is event delegation in the
                 DOM?</h1>
-            <p>Event delegation in the DOM is a technique where a single event listener is attached to a parent element, rather than individual listeners on each child element. This leverages event bubbling, where events originating from child elements propagate up the DOM tree to their parent.</p>
+            <p>Event delegation is when you attach one event listener to a parent element instead of adding one to each child. The parent handles events for all its kids, making things faster and working even for new elements added later.</p>
         </div>
         <div class="bg-white my-2 p-3 rounded-lg shadow-sm">
             <h1 class="font-bold text-lg border-b border-dotted border-gray-500 mb-2">What is event bubbling in the DOM?
             </h1>
-            <p>Event bubbling in the DOM is the process by which an event, when triggered on a specific element, propagates upwards through the DOM tree. Starting at the target element where the event originated, the event triggers any attached event listeners, then travels to its immediate parent element, triggering those listeners as well. This upward propagation continues through each ancestor element, effectively "bubbling" up the hierarchy until it reaches the root of the DOM. </p>
+            <p>Event bubbling is when an event starts on an element and then "bubbles up" to its parents, triggering their event listeners. It’s useful for handling events at the parent level.</p>
         </div>
         <div class="bg-white my-2 p-3 rounded-lg shadow-sm">
             <h1 class="font-bold text-lg border-b border-dotted border-gray-500 mb-2">How do you create, add, and remove
                 elements using JavaScript?</h1>
-            <h1>
-                JavaScript provides powerful tools for dynamically manipulating the DOM, allowing you to create, add, and remove HTML elements. Here's a breakdown of the key methods:
-            </h1>
             <ul class="list-disc ml-8">
-                <li>Creating Elements by "document.createElement(tagName)"</li>
-                <li>Adding Elements using "element.appendChild(childNode)"</li>
-                <li>Removing Elements by using "parentNode.removeChild(childNode)"</li>
+                <li>Create an element: document.createElement('tagName');</li>
+                <li>Add an element: parentElement.appendChild(newElement);</li>
+                <li>Remove an element: element.remove();</li>
             </ul>
         </div>
     </main>
-    <!-- Main Content End -->
+ 
 
 
 </body>

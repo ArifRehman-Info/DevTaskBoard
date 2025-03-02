@@ -7,27 +7,18 @@
     <title>Dev Board</title>
     <link rel="shortcut icon" href="assets/logo.png" type="image/x-icon">
 
-    <!-- DaisyUI CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-
-    <!-- Tailwind CDN -->
+     <link rel="stylesheet" href="./css.css">
+    
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
 
-    <!-- Style -->
-    <style>
-       #task-list p{
-        text-align: left;
-        background-color: #F4F7FF;
-        padding: 10px;
-        border-radius: 10px;
-        margin: 10px 0px;
-       }
-    </style>
+  
+
 </head>
 
 <body class="bg-[#15ceb7]">
-    <!-- Header Start -->
+
     <header class="container mx-auto">
         <div class="navbar bg-base-100 shadow-sm rounded-lg p-3">
             <div class="cursor-pointer flex items-center flex-1">
@@ -55,14 +46,12 @@
             </div>
         </div>
     </header>
-    <!-- Header Start -->
-
-    <!-- Main Content Start -->
+  
     <main class="container mx-auto flex gap-4 mt-4">
-        <!-- Left Part Start -->
+    
         <section class="flex-1 bg-base-100 p-2 rounded-xl w-4/6 shadow-sm">
 
-            <!-- Top-Card Start -->
+     
             <div class="flex gap-6 mb-2">
                 <div class="flex items-center gap-8 bg-[#F4F7FF] p-4 rounded-xl w-1/4">
                     <figure>
@@ -86,9 +75,9 @@
                     <p><span id="day"></span><br> <span id="month-year" class="font-bold"></span></p>
                 </div>
             </div>
-            <!-- Top-Card End -->
+          
 
-            <!-- Remaining Card Start -->
+         
             <div class="flex flex-wrap w-full gap-4">
                 <div class="bg-[#F4F7FF] p-4 rounded-xl w-[32%]">
                     <h2 class="bg-white inline-block p-2 rounded-xl">ShopEase</h2>
@@ -164,26 +153,24 @@
                     </div>
                 </div>
             </div>
-            <!-- Remaining Card End -->
+    
 
         </section>
-        <!-- Left Part End -->
 
-        <!-- Right Part Start -->
         <section class="shadow-sm bg-base-100 p-4 rounded-xl text-center w-2/6">
             <figure class="flex items-center gap-4 justify-center">
                 <img src="assets/activity.png" alt="">
                 <figcaption>Activity Log</figcaption>
             </figure>
             <button id="clear-history" class="btn bg-[#3752FD] text-white my-4">Clear Histoy</button>
-            <div id="task-list"></div>
+            <div id="option"></div>
         </section>
-        <!-- Right Part End -->
+
     </main>
-    <!-- Main Content End -->
 
 
-    <!-- Script -->
+
+
     <script src="scripts/script.js"></script>
 </body>
 
