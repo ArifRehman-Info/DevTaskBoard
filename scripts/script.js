@@ -6,11 +6,6 @@ const date = currentTime.getDate();
 const year = currentTime.getFullYear();
 document.getElementById('day').innerText = day + ',';
 document.getElementById('month-year').innerText = month + ' ' + date + ' ' + year;
-document.getElementById("discover-something")
-  .addEventListener("click", function () {
-    window.location.href = "blog.html";
-  });
-
 for (let i = 0; i < completedButtons.length; i++) {
     completedButtons[i].addEventListener("click", function () {
 
